@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Untuk Bunda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Newsreader:opsz,wght@6..72,450;6..72,550&family=Outfit:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="langit" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <main>
+      <section class="slide hero" id="awal">
+        <p class="kicker">Jaring kosmik · 420 juta tahun cahaya</p>
+        <h1>Sabtu, 30 Oktober 1971.</h1>
+        <p class="narasi">Dari jutaan kemungkinan yang ada di dunia..</p>
+      </section>
+
+      <section class="slide" id="jaring">
+        <p class="kicker">Cahaya yang lebih tua</p>
+        <h2>Langit ini sudah berjalan lama</h2>
+      </section>
+
+      <section class="slide" id="galaksi">
+        <p class="kicker">Satu titik</p>
+        <h2>Ratusan miliar matahari</h2>
+      </section>
+
+      <section class="slide" id="bima">
+        <p class="kicker">Bima Sakti</p>
+        <h2>Rumah yang hampir tak terlihat</h2>
+      </section>
+
+      <section class="slide" id="bumi">
+        <p class="kicker">Delapan menit cahaya</p>
+        <h2>Matahari sampai ke Bumi</h2>
+      </section>
+
+      <section class="slide" id="hari">
+        <p class="kicker">Sawangan, Indonesia</p>
+        <h2>Jum'at, 30 Oktober 2026.</h2>
+        <button type="button" class="slip" id="buka-surat">klik untuk membuka surat</button>
+      </section>
+    </main>
+
+    <button type="button" class="sound" id="alunan" aria-pressed="false">Alunan</button>
+    <p class="sound-hint" id="sound-hint">Sentuh layar untuk alunan</p>
+
+    <dialog id="surat" aria-label="Surat untuk Bunda">
+      <article tabindex="-1">
+        <h2></h2>
+        <div class="isi"></div>
+        <button type="button" id="tutup-surat">Tutup</button>
+      </article>
+    </dialog>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
